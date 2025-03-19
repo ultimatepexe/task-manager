@@ -14,7 +14,10 @@ const router = createBrowserRouter([
     path: "/task",
     element: <TaskPage />
   }
-])
+],
+{
+  basename: "/"
+})
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
