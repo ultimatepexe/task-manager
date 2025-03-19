@@ -36,10 +36,6 @@ function App() {
     updateTasks([...tasks, newTask])
   }
 
-  function onDetailsTaskClick(task) {
-    alert(task.description)
-  }
-
   return (
     <>
       <h1>
@@ -51,7 +47,7 @@ function App() {
       </div>
 
       <div>
-        <Tasks tasks={tasks} onTaskClick={onTaskClick} onDeleteTaskClick={onDeleteTaskClick} onDetailsTaskClick={onDetailsTaskClick} />
+        <Tasks tasks={tasks} onTaskClick={onTaskClick} onDeleteTaskClick={onDeleteTaskClick} />
       </div>
     </>
   )
